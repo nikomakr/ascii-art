@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	args := os.Args[1:]
+	args := os.Args[1:] // Get command-line arguments, excluding the program name (os.Args[0] is the program name). This allows us to work with the user-provided input string and optional banner name directly.
 
 	switch len(args) { // Check the number of arguments provided
 	case 0: // No arguments provided. Either no input string or banner name provided. Notify user and exit with error code.
